@@ -8,6 +8,13 @@ import slidersUI from './sliders';
 		$(this).attr('href', linkHref.replace(/ /igm, ''));
 	});
 
+	$('.js-nav-btn').on('click', function(event) {
+		event.preventDefault();
+		
+		$(this).toggleClass('active');
+		$('.nav').toggleClass('active');
+	});
+
 	fullsizeImagesUI();
 
 	slidersUI();

@@ -2,7 +2,8 @@
 	Variables
 \* ------------------------------------------------------------ */
 
-$primary-font: 'Montserrat', sans-serif;
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'El Messiri', sans-serif;
 
 /* ------------------------------------------------------------ *\
 	Bootstrap Variables
@@ -10,6 +11,7 @@ $primary-font: 'Montserrat', sans-serif;
 
 /*  Fonts  */
 $font-family-sans-serif: $primary-font;
+$font-family-serif: $secondary-font;
 
 $line-height-base: 1.88;
 
@@ -32,3 +34,6 @@ $grid-breakpoints: (
   lg: 1025px,
   xl: 1281px
 ) !default;
+
+$gold: #C29F7B;
+$blue: #26627C;

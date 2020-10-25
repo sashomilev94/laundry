@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Nav Btn
+\* ------------------------------------------------------------ */
+
+.nav-btn {
+	@include reset-button;
+	
+	display: none;
+	position: relative; 
+	width: 31px; 
+	height: 18px;
+	padding: 0;
+	z-index: 10;
+
+	span { 
+		display: block; 
+		position: absolute; 
+		left: 0px; 
+		right: 0px; 
+		height: 3px;
+		border-radius: 4px; 
+		margin: auto; 
+		background: $gold; 
+		transition: all .4s;
+
+		&:nth-child(1) { 
+			top: 0px; 
+		}
+
+		&:nth-child(2) { 
+			top: 7px; 
+		}
+
+		&:nth-child(3) { 
+			top: 14px; 
+		}
+	}
+
+	&.active span {
+		transition: all .4s;
+
+		&:nth-child(2) { 
+			opacity: 0; 
+		}
+
+		&:nth-child(1) { 
+			transform: rotate(45deg); 
+		}
+
+		&:nth-child(3) { 
+			transform: rotate(-45deg); 
+		}
+
+		&:nth-child(1),
+		&:nth-child(3) { 
+			top: 7px; 
+		}
+	}
+}
+
+/* === Tablet === */
+@include media-breakpoint-down(md) {
+	.nav-btn {
+		display: block;
+	}
+}

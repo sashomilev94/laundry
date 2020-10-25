@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav {
+	font-size: 20px;
+
+	ul {
+		display: flex;
+		padding: 0;
+		list-style: none; 
+	}
+
+	li + li {
+		margin-left: 20px;
+	}
+
+	a {
+		position: relative;
+		color: $gold;
+		transition: all .4s;
+
+		@media(min-width: 1025px){
+			&:after {
+				position: absolute;
+				bottom: 0; 
+				left: 0;
+				right: 0;
+				height: 2px;
+				width: 0;
+				background-color: $blue; 
+				transition: width .4s;
+				content: '';
+			}
+
+			&:hover:after {
+				width: 100%;
+			}
+			
+			&:hover {
+				color: $blue;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* === Tablet === */
+@include media-breakpoint-down(md) {
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		padding: 20px; 
+		background-color: $blue;
+
+		ul {
+			display: block;
+		}
+
+		li + li {
+			margin-left: 0;
+		}
+	}
+}
