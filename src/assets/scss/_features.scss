@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------ *\
+	Features
+\* ------------------------------------------------------------ */
+
+.features {
+	display: flex;
+	margin: 0 -15px -20px;
+
+	.feature {
+		width: 33.33%;
+		padding: 10px 15px;
+		margin-bottom: 20px;
+	}
+}
+
+.feature {
+	border-radius: 10px;
+	text-align: center;
+	transition: background .4s, box-shadow .4s;
+
+	&__content {
+		color: $blue;
+		transition: color .4s;
+	}
+
+	&__icon {
+		margin-bottom: 15px;
+		color: $gold;
+		transition: color .4s;
+	}
+
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		background-color: $blue;
+
+		.feature__icon {
+			color: $white;
+
+			svg g > g {
+				fill: $blue;
+			}
+		}
+
+		.feature__content {
+			color: $white;
+		}
+	}
+}

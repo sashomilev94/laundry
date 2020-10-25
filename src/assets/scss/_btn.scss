@@ -22,7 +22,7 @@
 .btn-primary {
 	@include button-variant($gold, $gold, $blue, $blue, $gold);
 
-	color: black;
+	color: $white;
 
 	&:not(:disabled):not(.disabled):active,
 	&:not(:disabled):not(.disabled).active,

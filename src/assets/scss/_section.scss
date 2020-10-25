@@ -2,3 +2,15 @@
 	Section
 \* ------------------------------------------------------------ */
 
+.section {
+	margin: 50px 0;
+
+	&__head {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	&__title {
+		color: $blue;
+	}
+}

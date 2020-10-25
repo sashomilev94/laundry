@@ -17,8 +17,9 @@
 
 	a {
 		position: relative;
-		color: $gold;
+		color: $blue;
 		transition: all .4s;
+		font-weight: 500;
 
 		@media(min-width: 1025px){
 			&:after {
@@ -28,7 +29,7 @@
 				right: 0;
 				height: 2px;
 				width: 0;
-				background-color: $blue; 
+				background-color: $gold; 
 				transition: width .4s;
 				content: '';
 			}
@@ -38,7 +39,7 @@
 			}
 			
 			&:hover {
-				color: $blue;
+				color: $gold;
 				text-decoration: none;
 			}
 		}
