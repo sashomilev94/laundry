@@ -4,6 +4,7 @@
 
 .features {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 -15px -20px;
 
 	.feature {
@@ -29,20 +30,40 @@
 		transition: color .4s;
 	}
 
-	&:hover {
-		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-		background-color: $blue;
+	@media(min-width: 1025px){
+		&:hover {
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			background-color: $blue;
 
-		.feature__icon {
-			color: $white;
+			.feature__icon {
+				color: $white;
 
-			svg g > g {
-				fill: $blue;
+				svg g > g {
+					fill: $blue;
+				}
+			}
+
+			.feature__content {
+				color: $white;
 			}
 		}
+	}
+}
 
-		.feature__content {
-			color: $white;
+/* === Tablet === */
+@include media-breakpoint-down(md) {
+	.features {
+		.feature {
+			width: 50%;
+		}
+	}
+}
+
+/* === Mobile === */
+@include media-breakpoint-down(sm) {
+	.features {
+		.feature {
+			width: 100%;
 		}
 	}
 }
