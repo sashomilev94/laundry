@@ -1,0 +1,85 @@
+/* ------------------------------------------------------------ *\
+	Services
+\* ------------------------------------------------------------ */
+
+.service {
+	display: flex;
+
+	&__content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 50%;
+		padding: 50px;
+		background-color: $blue;
+		color: $white;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: url(../../assets/images/temp/waves.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			height: 300px;
+			opacity: .4;
+			z-index: 0;
+		}
+
+		&-inner {
+			position: relative;
+			z-index: 3;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__icon {
+		margin-bottom: 20px;
+	}
+
+	&__image {
+		width: 50%;
+
+		&:after {
+			display: block;
+			padding-top: 100%;
+			content: '';
+		}
+	}
+
+	&--reversed {
+		flex-direction: row-reverse;
+	}
+}
+
+/* === Small Desktop === */
+@include media-breakpoint-down(lg) {
+	.service {
+		&__content {
+			padding: 20px;
+		}
+	}
+}
+
+/* === Tablet === */
+@include media-breakpoint-down(md) {
+	.service {
+		display: block;
+
+		&__content,
+		&__image {
+			width: 100%;
+		}
+
+		&__image:after {
+			padding-top: 56.25%;
+		}
+	}
+}
