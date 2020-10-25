@@ -13,4 +13,8 @@
 	&__title {
 		color: $blue;
 	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
