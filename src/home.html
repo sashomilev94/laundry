@@ -4,7 +4,43 @@
 <body>
 	<div class="wrapper">
 		<include src="header.html"></include>
-		<div style="height: 2000px;"></div>
+		
+		<div class="main" id="main">
+			<div class="hero">
+				<picture class="hero__image js-fullsize-image fullsize-image">
+					<source data-srcset="assets/images/temp/banner.jpg" media="(max-width: 767px)">
+					<source data-srcset="assets/images/temp/banner.jpg" media="(min-width: 768px) and (max-width: 991px)">
+					<img data-src="assets/images/temp/banner.jpg" alt="Банер" class="lazyload">
+				</picture><!-- /.hero__image -->
+
+				<div class="hero__content">
+					<div class="container">
+						<div class="hero__content-inner">
+							<h1 class="hero__content-title">
+								Тук трябва да се постави някакъв текст, нямам идея какъв.
+
+								<br>
+
+								Пример: Ние ще се погрижим за вашите дрехи и бельо.
+							</h1><!-- /.hero__content-title -->
+
+							<div class="hero__content-actions">
+								<a href="#" class="btn btn-primary">Научете повече</a>
+							</div><!-- /.hero__content-actions -->
+						</div><!-- /.hero__content-inner -->
+					</div><!-- /.container -->
+				</div><!-- /.hero__content -->
+			</div><!-- /.hero -->
+
+			<div class="section">
+				<div class="container">
+					<div class="tag">Нашият процес</div><!-- /.tag -->
+
+					<h1 class="section__title">Така работим ние</h1><!-- /.section__title -->
+				</div><!-- /.container -->
+			</div><!-- /.section -->
+		</div><!-- /#main.main -->
+
 		<include src="footer.html"></include>
 	</div><!-- /.wrapper -->
 

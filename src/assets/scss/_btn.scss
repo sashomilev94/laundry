@@ -7,6 +7,9 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	height: 40px;
+	padding: 0 15px;
+	min-width: 200px;
 	text-decoration: none;
 	white-space: normal;
 
@@ -17,7 +20,7 @@
 }
 
 .btn-primary {
-	@include button-variant(red, green, blue, pink, yellow);
+	@include button-variant($gold, $gold, $blue, $blue, $gold);
 
 	color: black;
 
@@ -37,10 +40,10 @@
 	}
 }
 
-.btn-outline-primary {
-	@include button-outline-variant(red, green, blue, pink);
+.btn-secondary {
+	@include button-variant($blue, $blue, $gold, $gold, $blue);
 
-	color: yellow;
+	color: $white;
 
 	&:not(:disabled):not(.disabled):active,
 	&:not(:disabled):not(.disabled).active,
