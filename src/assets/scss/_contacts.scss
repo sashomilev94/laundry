@@ -7,14 +7,13 @@
 
 	&__info {
 		position: absolute;
-		top: 0;
+		top: 0px;
 		left: 0;
 		z-index: 5;
 		display: flex;
 		align-items: center;
-		padding: 20px;
+		padding: 60px 20px;
 		width: 450px;
-		bottom: 0;
 		background-color: $blue;
 		color: $white;
 		overflow: hidden;
