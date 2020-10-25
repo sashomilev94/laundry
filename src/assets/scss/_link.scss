@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	color: $white;
+
+	svg {
+		margin-right: 10px;
+	}
+
+	@media(min-width: 1025px){
+		&:after {
+			position: absolute;
+			bottom: -2px; 
+			left: 0;
+			right: 0;
+			height: 1px;
+			width: 0;
+			background-color: $white; 
+			transition: width .4s;
+			content: '';
+		}
+
+		&:hover:after {
+			width: 100%;
+		}
+		
+		&:hover {
+			color: $white;
+			text-decoration: none;
+		}
+	}
+}
