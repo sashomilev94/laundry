@@ -30,3 +30,13 @@
 		height: 200px;
 	}
 }
+
+/* === Mobile === */
+@include media-breakpoint-down(sm) {
+	.callout {
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
