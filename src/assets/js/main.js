@@ -1,5 +1,6 @@
 import fullsizeImagesUI from './fullsize';
 import slidersUI from './sliders';
+import AOS from 'aos';
 import currentYear from './current-year'
 
 ;(function(window, document, $) {
@@ -43,4 +44,11 @@ import currentYear from './current-year'
 	slidersUI();
 
 	currentYear();
+
+	AOS.init({
+		duration: 500,
+		easing: 'ease-in-cubic',
+		// offset: 200,
+		once: true
+	});
 })(window, document, window.jQuery);

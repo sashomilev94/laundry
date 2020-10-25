@@ -9,9 +9,9 @@
 	&__content {
 		width: 50%;
 		padding-left: 30px;
+		color: $blue;
 
 		h2 {
-			color: $blue;
 		}
 	}
 
@@ -23,6 +23,24 @@
 			display: block;
 			padding-top: 75%;
 			content: '';
+		}
+	}
+}
+
+/* === Tablet === */
+@include media-breakpoint-down(md) {
+	.about {
+		display: block;
+
+		&__content {
+			width: 100%;
+			padding-left: 0;
+			text-align: center; 
+		}
+
+		&__image {
+			width: 100%;
+			margin-bottom: 20px;
 		}
 	}
 }
