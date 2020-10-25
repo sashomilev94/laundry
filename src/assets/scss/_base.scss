@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+ul:last-child,
+ol:last-child,
+p:last-child { 
+	margin-bottom: 0; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, .h1 {
+	font-size: 40px;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+	font-weight: 700; 
+}
+
+/* === Mobile === */
+@include media-breakpoint-down(sm) {
+	h1, .h1 {
+		font-size: 32px;
+	}
+}
