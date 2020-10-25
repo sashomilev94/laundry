@@ -74,5 +74,14 @@ export const initSlider = (selector, options = {}) => {
 }
 
 export default function slidersUI() {
-	initSlider('.js-slider-demo');
+	initSlider('.js-slider-testimonials', {
+		autoplay: {
+			delay: 5000,
+		},
+		autoHeight: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		}
+	});
 }
