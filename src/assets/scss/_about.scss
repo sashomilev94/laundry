@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	About
+\* ------------------------------------------------------------ */
+
+.about {
+	display: flex;
+	align-items: center;
+
+	&__content {
+		width: 50%;
+		padding-left: 30px;
+
+		h2 {
+			color: $blue;
+		}
+	}
+
+	&__image {
+		width: 50%;
+		box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+
+		&:after {
+			display: block;
+			padding-top: 75%;
+			content: '';
+		}
+	}
+}
